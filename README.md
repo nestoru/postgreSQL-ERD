@@ -1,7 +1,7 @@
-==PostgreSQL ERD
+# PostgreSQL ERD
 The simplest way to get all postgres tables, fields, types and relationships.
 
-==Install
+## Install
 ```
 git clone https://github.com/nestoru/postgreSQL-ERD.git
 cd postgreSQL-ERD
@@ -10,7 +10,7 @@ source myenv/bin/activate
 pip install
 ```
 
-==Generate a declarative diagram (d2) file out of the database
+## Generate a declarative diagram (d2) file out of the database
 ```
 export DB_HOST='' && \
 export DB_NAME='' && \
@@ -19,14 +19,14 @@ export DB_PASSWORD='' && \
 python postgres2d2.py > schema.d2
 ```
 
-==Convert the d2 file to svg
+## Convert the d2 file to svg
 The d2 files can be converted to svg, png, pdf etc (check d2 reference for options).
 Option --watch listens on a given port, opens up chrome and shows the diagram, --sketch simulates a human sketch, -t is the theme, --scale shows a size suitable for your personal device, the extension of the last token (output file) instructs the rendering format.
 ```
 d2 --watch --sketch -t 300 --scale 0.1 schema.d2 schema.svg
 ```
 
-==Sample generated d2 file
+## Sample generated d2 file
 The name of each entity is composed by the schema.tableName.
 ```
 IT.machines: {
@@ -62,5 +62,5 @@ IT.machines.disk_id -> IT.disks.id
 CRM.clients.contact_id -> CRM.contacts.id
 ```
 
-==Sample generated diagram (
+## Sample generated diagram (
 ![Screenshot](sample.png)

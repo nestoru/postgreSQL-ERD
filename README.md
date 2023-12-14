@@ -1,6 +1,9 @@
 # PostgreSQL ERD
 The simplest way to get all postgres tables, fields, types and relationships.
 
+## Sample generated diagram
+![Screenshot](sample.png)
+
 ## Install
 ```
 git clone https://github.com/nestoru/postgreSQL-ERD.git
@@ -62,5 +65,3 @@ IT.machines.disk_id -> IT.disks.id
 CRM.clients.contact_id -> CRM.contacts.id
 ```
 
-## Sample generated diagram (
-![Screenshot](sample.png)
